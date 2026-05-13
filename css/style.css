@@ -234,3 +234,40 @@ iframe{
   border-radius: 25px;
   box-shadow: var(--sombra);
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  nav{
+  display: none;
+  position: absolute;
+  top: 85px;
+  right: 20px;
+  flex-direction: column;
+  background: var(--claro);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+  }
+  nav.ativo{
+    display: flex;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 12000px)  {
+}
